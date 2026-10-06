@@ -1,0 +1,7 @@
+print("=== CADASTRO DE PRODUTOS ===")
+nome = input("Qual o nome do produto? ")
+marca = input("Qual a marca do produto? ")
+preço = float(input("Qual o preço? "))
+print("Nome:", nome)
+print("Marca:", marca)
+print("Preço:", preço)
