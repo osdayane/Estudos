@@ -1,0 +1,16 @@
+
+services:
+  mysql_cursos:
+    image: mysql:8.4
+    container_name: mysql_cursos
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: senha_de_estudo
+      MYSQL_DATABASE: base_de_dados
+    volumes:
+      - mysql_cursos_data:/var/lib/mysql
+
+volumes:
+  mysql_cursos_data:
